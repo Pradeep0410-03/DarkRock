@@ -1,0 +1,104 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    background-color: #1f1f1f;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* Choices container */
+.Choices {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+/* Individual choice */
+.choice {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    margin: 3rem;
+}
+
+/* Images */
+.choice img {
+    height: 100px;
+    width: 100;
+    border-radius: 60px;
+    object-fit: cover;
+}
+
+/* Hover effect */
+.choice:hover {
+    background-color: #3a3a3a;
+    transform: scale(1.1);
+    border: 2px solid #00ffd5;
+    box-shadow: 0 0 10px #00ffd5;
+
+}
+
+/* Score card */
+.score_card {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Score box */
+.score {
+    display: flex;
+    gap: 4rem;
+    padding: 1.5rem 3rem;
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 213, 0.2);
+}
+
+/* Individual score */
+.score p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Actual score numbers */
+#player_score,
+#comp_score {
+    font-size: 2rem;
+    color: #00ffd5;
+}
+#msg {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00ffd5;
+}
